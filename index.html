@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="preload"
+      href="TripSans-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="TripSans-Medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <script
+      src="https://kit.fontawesome.com/20275c184a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="wrapper">
+      <div class="header-top-section">
+        <div class="logoSearch">
+          <div class="logo"><img src="/images/logo.svg" alt="" /></div>
+          <div class="searchbar">
+            <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <input type="search" placeholder="" />
+          </div>
+        </div>
+        <nav>
+          <ul class="nav-ul">
+            <li class="li-nav">
+              <i class="fa-solid fa-pencil"></i> <a href="">Avis</a>
+            </li>
+            <li class="li-nav">
+              <i class="fa-solid fa-heart"></i><a href="">Voyages</a>
+            </li>
+            <li class="li-nav">
+              <i class="fa-solid fa-bell"></i><a href="">Alertes</a>
+            </li>
+          </ul>
+          <button class="nav-connexion-button">Connectez-vous</button>
+        </nav>
+      </div>
+      <div class="header-bottom-section">
+        <h1 class="main-title">
+          <span class="first-word">Explorez</span>
+          <span class="second-word">Paris</span>
+        </h1>
+        <nav class="bottom-header-nav-menu">
+          <ul class="nav-menu-ul">
+            <li class="nav-menu">
+              <p>Hôtels</p>
+              <i class="fa-solid fa-bed"></i>
+            </li>
+            <li class="nav-menu">
+              <p>Location de vacances</p>
+              <i class="fa-solid fa-house-chimney-user"></i>
+            </li>
+            <li class="nav-menu">
+              <p>Activités</p>
+              <i class="fa-solid fa-ticket"></i>
+            </li>
+            <li class="nav-menu">
+              <p>Restaurant</p>
+              <i class="fa-solid fa-utensils"></i>
+            </li>
+            <li class="nav-menu">
+              <p>Formus de voyage</p>
+              <i class="fa-solid fa-message"></i>
+            </li>
+            <li class="nav-menu hidden">
+              <p>Vols</p>
+              <i class="fa-solid fa-message"></i>
+            </li>
+            <li class="nav-menu hidden">
+              <p>Croisières</p>
+              <i class="fa-solid fa-message"></i>
+            </li>
+            <li class="nav-menu">
+              <p>Plus</p>
+              <p class="points">...</p>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrapper">
+      <div class="photoMain">
+        <div class="leftContainer">
+          <img src="/images/caption.jpeg" alt="" />
+        </div>
+
+        <div class="rightContainer">
+          <div class="top">
+            <img src="/images/caption2.jpeg" alt="" />
+          </div>
+          <div class="bottom">
+            <img src="/images/caption3.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="links">
+        <p>Europe > France > Île-de-France > Paris</p>
+        <p>Visiter : Paris</p>
+      </div>
+
+      <div class="city">
+        <section class="city-description">
+          <h1>La ville Lumière éblouit en tous points</h1>
+          <p>
+            Aucun autre endroit au monde ne fait autant rêver que Paris. La
+            ville séduit par son art, son architecture, sa culture et sa
+            cuisine, mais il y a aussi des merveilles plus discrètes qui
+            n’attendent qu’à être explorées : les ruelles pavées pittoresques,
+            les pâtisseries au coin de la rue et les petits bistrots douillets
+            qui vous invitent à boire un verre de beaujolais. Préparez-vous à
+            vous approprier Paris.
+          </p>
+        </section>
+
+        <section class="city-map">
+          <div class="city-map-top">
+            <h2>
+              Paris : commencez à <br />
+              organiser !
+            </h2>
+            <p>
+              Créer un voyage pour enregistrer et organiser toutes vos idées et
+              les visualiser sur une carte.
+            </p>
+            <button class="city-map-button">Créer un voyage</button>
+          </div>
+          <div class="city-map-bottom">
+            <img src="/images/maps_cnuhsr.png" alt="" />
+          </div>
+        </section>
+      </div>
+
+      <section class="immanquables">
+        <h1>Paris : les immanquables</h1>
+
+        <div class="immanquables-section">
+          <div class="left-section">
+            <h2>Se divertir</h2>
+            <p>
+              Des lieux à voir, des rues à explorer et des expériences
+              emblématiques à Paris.
+            </p>
+            <a href="">Tout afficher</a>
+          </div>
+          <div class="carroussel">
+            <div class="card">
+              <div class="image">
+                <img src="/images/eiffeltoren.jpeg" alt="" />
+                <div class="circle">
+                  <img src="/images/heart.png" alt="" />
+                </div>
+                <div class="square" id="first-square">
+                  <img
+                    src="/images/Capture_d_écran_2022-07-13_à_15.06.26-removebg-preview.png"
+                    alt=""
+                  />
+                  <h4>2022</h4>
+                </div>
+              </div>
+              <h3>Tour Eiffel</h3>
+              <div class="notation">
+                <div class="rounds">
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="semi-round">
+                    <div class="half-circle-part2"></div>
+                    <div class="half-circle-part1"></div>
+                  </div>
+                </div>
+                <div class="score">141 001</div>
+              </div>
+              <p>
+                Tours et plateformes d'observation, <br />
+                Monuments & Points d'intérêt
+              </p>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="/images/cour-napoleon-et-pyramide.jpeg" alt="" />
+                <div class="circle">
+                  <img src="/images/heart.png" alt="" />
+                </div>
+                <div class="square" id="second-square">
+                  <img
+                    src="/images/Capture_d_écran_2022-07-13_à_15.06.26-removebg-preview.png"
+                    alt=""
+                  />
+                  <h4>2022</h4>
+                </div>
+              </div>
+              <h3>Musée du Louvre</h3>
+              <div class="notation">
+                <div class="rounds">
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="semi-round">
+                    <div class="half-circle-part2"></div>
+                    <div class="half-circle-part1"></div>
+                  </div>
+                </div>
+                <div class="score">101 478</div>
+              </div>
+              <p>Bâtiments architecturaux, Musées d'art</p>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="/images/arc-de-triomphe-at-night.jpeg" alt="" />
+                <div class="circle">
+                  <img src="/images/heart.png" alt="" />
+                </div>
+                <div class="square">
+                  <img
+                    src="/images/Capture_d_écran_2022-07-13_à_15.06.26-removebg-preview.png"
+                    alt=""
+                  />
+                  <h4>2022</h4>
+                </div>
+              </div>
+              <h3>Arc de Triomphe</h3>
+              <div class="notation">
+                <div class="rounds">
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="semi-round">
+                    <div class="half-circle-part2"></div>
+                    <div class="half-circle-part1"></div>
+                  </div>
+                </div>
+                <div class="score">45 435</div>
+              </div>
+              <p>
+                Bâtiments architecturaux, Sites <br />
+                historiques
+              </p>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="/images/vue-de-la-cour-d-honneur.jpeg" alt="" />
+                <div class="circle">
+                  <img src="/images/heart.png" alt="" />
+                </div>
+                <div class="square">
+                  <img
+                    src="/images/Capture_d_écran_2022-07-13_à_15.06.26-removebg-preview.png"
+                    alt=""
+                  />
+                  <h4>2022</h4>
+                </div>
+              </div>
+              <h3>Musée Rodin</h3>
+              <div class="notation">
+                <div class="rounds">
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="semi-round">
+                    <div class="half-circle-part2"></div>
+                    <div class="half-circle-part1"></div>
+                  </div>
+                </div>
+                <div class="score">12 557</div>
+              </div>
+              <p>Musée spécialisés</p>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="/images/the-amazingly-detailed.jpeg" alt="" />
+                <div class="circle">
+                  <img src="/images/heart.png" alt="" />
+                </div>
+                <div class="square">
+                  <img
+                    src="/images/Capture_d_écran_2022-07-13_à_15.06.26-removebg-preview.png"
+                    alt=""
+                  />
+                  <h4>2022</h4>
+                </div>
+              </div>
+              <h3>Cathédrale Notre-Dame de Paris</h3>
+              <div class="notation">
+                <div class="rounds">
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="semi-round">
+                    <div class="half-circle-part2"></div>
+                    <div class="half-circle-part1"></div>
+                  </div>
+                </div>
+                <div class="score">71 410</div>
+              </div>
+              <p>
+                Bâtiments architecturaux, Sites <br />
+                historiques
+              </p>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="/images/the-bookstore.jpeg" alt="" />
+                <div class="circle">
+                  <img src="/images/heart.png" alt="" />
+                </div>
+                <div class="square">
+                  <img
+                    src="/images/Capture_d_écran_2022-07-13_à_15.06.26-removebg-preview.png"
+                    alt=""
+                  />
+                  <h4>2022</h4>
+                </div>
+              </div>
+              <h3>
+                Librairie Shakespeare and <br />
+                Company
+              </h3>
+              <div class="notation">
+                <div class="rounds">
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="semi-round">
+                    <div class="half-circle-part2"></div>
+                    <div class="half-circle-part1"></div>
+                  </div>
+                </div>
+                <div class="score">3 945</div>
+              </div>
+              <p>
+                Tours et plateformes d'observation, <br />
+                Monuments & Points d'intérêt
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="immanquables-section" id="section2">
+          <div class="left-section">
+            <h2>Se reposer</h2>
+            <p>Un mélange de charme, de symboles et de modernité.</p>
+            <a href="">Tout afficher</a>
+          </div>
+          <div class="carroussel">
+            <div class="card">
+              <div class="image">
+                <img src="/images/le-bristol-paris-colonnade.jpeg" alt="" />
+                <div class="circle">
+                  <img src="/images/heart.png" alt="" />
+                </div>
+                <div class="square" id="first-square">
+                  <img
+                    src="/images/Capture_d_écran_2022-07-13_à_15.06.26-removebg-preview.png"
+                    alt=""
+                  />
+                  <h4>2022</h4>
+                </div>
+              </div>
+              <h3>Le Bristol Paris</h3>
+              <div class="notation">
+                <div class="rounds">
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                </div>
+                <div class="score">2159</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="/images/detail.jpeg" alt="" />
+                <div class="circle">
+                  <img src="/images/heart.png" alt="" />
+                </div>
+                <div class="square" id="second-square">
+                  <img
+                    src="/images/Capture_d_écran_2022-07-13_à_15.06.26-removebg-preview.png"
+                    alt=""
+                  />
+                  <h4>2022</h4>
+                </div>
+              </div>
+              <h3>La Réserve Paris - Hotel and Spa</h3>
+              <div class="notation">
+                <div class="rounds">
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round">
+                   
+                  </div>
+                </div>
+                <div class="score">535</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="/images/exterior.jpeg" alt="" />
+                <div class="circle">
+                  <img src="/images/heart.png" alt="" />
+                </div>
+                <div class="square">
+                  <img
+                    src="/images/Capture_d_écran_2022-07-13_à_15.06.26-removebg-preview.png"
+                    alt=""
+                  />
+                  <h4>2022</h4>
+                </div>
+              </div>
+              <h3>Four Seasons Hotel George V</h3>
+              <div class="notation">
+                <div class="rounds">
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round">
+                    
+                  </div>
+                </div>
+                <div class="score">3 154</div>
+              </div>
+              <p>
+                Bâtiments architecturaux, Sites <br />
+                historiques
+              </p>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="/images/vue-de-la-cour-d-honneur.jpeg" alt="" />
+                <div class="circle">
+                  <img src="/images/heart.png" alt="" />
+                </div>
+                <div class="square">
+                  <img
+                    src="/images/Capture_d_écran_2022-07-13_à_15.06.26-removebg-preview.png"
+                    alt=""
+                  />
+                  <h4>2022</h4>
+                </div>
+              </div>
+              <h3>Musée Rodin</h3>
+              <div class="notation">
+                <div class="rounds">
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="semi-round">
+                    <div class="half-circle-part2"></div>
+                    <div class="half-circle-part1"></div>
+                  </div>
+                </div>
+                <div class="score">12 557</div>
+              </div>
+              <p>Musée spécialisés</p>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="/images/the-amazingly-detailed.jpeg" alt="" />
+                <div class="circle">
+                  <img src="/images/heart.png" alt="" />
+                </div>
+                <div class="square">
+                  <img
+                    src="/images/Capture_d_écran_2022-07-13_à_15.06.26-removebg-preview.png"
+                    alt=""
+                  />
+                  <h4>2022</h4>
+                </div>
+              </div>
+              <h3>Cathédrale Notre-Dame de Paris</h3>
+              <div class="notation">
+                <div class="rounds">
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="semi-round">
+                    <div class="half-circle-part2"></div>
+                    <div class="half-circle-part1"></div>
+                  </div>
+                </div>
+                <div class="score">71 410</div>
+              </div>
+              <p>
+                Bâtiments architecturaux, Sites <br />
+                historiques
+              </p>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="/images/the-bookstore.jpeg" alt="" />
+                <div class="circle">
+                  <img src="/images/heart.png" alt="" />
+                </div>
+                <div class="square">
+                  <img
+                    src="/images/Capture_d_écran_2022-07-13_à_15.06.26-removebg-preview.png"
+                    alt=""
+                  />
+                  <h4>2022</h4>
+                </div>
+              </div>
+              <h3>
+                Librairie Shakespeare and <br />
+                Company
+              </h3>
+              <div class="notation">
+                <div class="rounds">
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="semi-round">
+                    <div class="half-circle-part2"></div>
+                    <div class="half-circle-part1"></div>
+                  </div>
+                </div>
+                <div class="score">3 945</div>
+              </div>
+              <p>
+                Tours et plateformes d'observation, <br />
+                Monuments & Points d'intérêt
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="immanquables-section">
+          <div class="left-section">
+            <h2>Se restaurer</h2>
+            <p>
+              Bistrots et bars typiques, et plus encore à Paris.
+            </p>
+            <a href="">Tout afficher</a>
+          </div>
+          <div class="carroussel">
+            <div class="card">
+              <div class="image">
+                <img src="/images/verjus.jpeg" alt="" />
+                <div class="circle">
+                  <img src="/images/heart.png" alt="" />
+                </div>
+        
+              </div>
+              <h3>Verjus</h3>
+              <div class="notation">
+                <div class="rounds">
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="semi-round">
+                    <div class="half-circle-part2"></div>
+                    <div class="half-circle-part1"></div>
+                  </div>
+                </div>
+                <div class="score">593</div>
+              </div>
+              <p>
+                €€€€ • Française, Euroéenne, Moderne
+              </p>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="/images/captionfaubourg.jpeg" alt="" />
+                <div class="circle">
+                  <img src="/images/heart.png" alt="" />
+                </div>
+              </div>
+            <div class="michelin">
+                <img src="/images/kisspng-restaurant-michelin-guide-michelin-star-french-cui-michelin-5b2d60914aef79.8743779315297004973069-removebg-preview.png" alt="">
+                <h4>MICHELIN</h4>
+              </div>
+              <h3>114 Faubourg</h3>
+              <div class="notation">
+                <div class="rounds">
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="semi-round">
+                    <div class="half-circle-part2"></div>
+                    <div class="half-circle-part1"></div>
+                  </div>
+                </div>
+                <div class="score">1 826</div>
+              </div>
+              <p>€€€€ • Française, Européenne, <br> Végétariens bienvenus</p>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="/images/frenchie.jpeg" alt="" />
+                <div class="circle">
+                  <img src="/images/heart.png" alt="" />
+                </div>
+              </div>
+              <div class="michelin">
+                <img src="/images/kisspng-restaurant-michelin-guide-michelin-star-french-cui-michelin-5b2d60914aef79.8743779315297004973069-removebg-preview.png" alt="">
+                <h4>MICHELIN</h4>
+              </div>
+              <h3>Frenchie</h3>
+              <div class="notation">
+                <div class="rounds">
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="semi-round">
+                    <div class="half-circle-part2"></div>
+                    <div class="half-circle-part1"></div>
+                  </div>
+                </div>
+                <div class="score">1 329</div>
+              </div>
+              <p>
+                €€€€ • Française, Végétariens <br> bienvenus, Plats sans gluten
+              </p>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="/images/vue-de-la-cour-d-honneur.jpeg" alt="" />
+                <div class="circle">
+                  <img src="/images/heart.png" alt="" />
+                </div>
+                <div class="square">
+                  <img
+                    src="/images/Capture_d_écran_2022-07-13_à_15.06.26-removebg-preview.png"
+                    alt=""
+                  />
+                  <h4>2022</h4>
+                </div>
+              </div>
+              <h3>Musée Rodin</h3>
+              <div class="notation">
+                <div class="rounds">
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="semi-round">
+                    <div class="half-circle-part2"></div>
+                    <div class="half-circle-part1"></div>
+                  </div>
+                </div>
+                <div class="score">12 557</div>
+              </div>
+              <p>Musée spécialisés</p>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="/images/the-amazingly-detailed.jpeg" alt="" />
+                <div class="circle">
+                  <img src="/images/heart.png" alt="" />
+                </div>
+                <div class="square">
+                  <img
+                    src="/images/Capture_d_écran_2022-07-13_à_15.06.26-removebg-preview.png"
+                    alt=""
+                  />
+                  <h4>2022</h4>
+                </div>
+              </div>
+              <h3>Cathédrale Notre-Dame de Paris</h3>
+              <div class="notation">
+                <div class="rounds">
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="semi-round">
+                    <div class="half-circle-part2"></div>
+                    <div class="half-circle-part1"></div>
+                  </div>
+                </div>
+                <div class="score">71 410</div>
+              </div>
+              <p>
+                Bâtiments architecturaux, Sites <br />
+                historiques
+              </p>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="/images/the-bookstore.jpeg" alt="" />
+                <div class="circle">
+                  <img src="/images/heart.png" alt="" />
+                </div>
+                <div class="square">
+                  <img
+                    src="/images/Capture_d_écran_2022-07-13_à_15.06.26-removebg-preview.png"
+                    alt=""
+                  />
+                  <h4>2022</h4>
+                </div>
+              </div>
+              <h3>
+                Librairie Shakespeare and <br />
+                Company
+              </h3>
+              <div class="notation">
+                <div class="rounds">
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>
+                  <div class="round"></div>         
+                  <div class="semi-round">
+                    <div class="half-circle-part2"></div>
+                    <div class="half-circle-part1"></div>
+                  </div>
+                </div>
+                <div class="score">3 945</div>
+              </div>
+              <p>
+                Tours et plateformes d'observation, <br />
+                Monuments & Points d'intérêt
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <footer>
+      <div class="logo">
+        <img src="/images/téléchargement-removebg-preview.png" alt="">
+      </div>
+      <h2>Made at le Reacteur by Julie DEE - 2022</h2>
+    </footer>
+  </body>
+</html>
