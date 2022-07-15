@@ -32,7 +32,6 @@ form.addEventListener("submit", async (e) => {
     lastname: document.querySelector("#lastname").value,
     email: document.querySelector("#email").value,
     message: document.querySelector("#message").value,
-    
   });
   console.log(response.data);
 });
@@ -44,4 +43,3 @@ formButton.addEventListener("click", () => {
 });
 
 console.log(document.querySelector("#firstname").value);
-
