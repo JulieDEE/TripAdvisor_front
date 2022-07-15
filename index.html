@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link
       rel="preload"
       href="TripSans-Regular.woff2"
@@ -27,13 +28,31 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
+    <div class="modal"></div>
+    <div class="form-container">
+      <form class="contact-form" id="contact-form">
+        <h1>Contactez nous</h1>
+        <input id = "firstname" class="form-input" type="text" placeholder="Nom" />
+        <input id = "lastname" class="form-input" type="text" placeholder="Prénom" />
+        <input id = "email" class="form-input" type="email" placeholder="Adresse mail" />
+        <textarea
+          name=""
+          id="message"
+          cols="40"
+          rows="10"
+          placeholder="Ecrivez votre message..."
+        ></textarea>
+        <button id="form-btn" type="submit">Envoyez le formulaire</button>
+      </form>
+    </div>
+
     <header class="wrapper">
       <div class="header-top-section">
         <div class="logoSearch">
           <div class="logo"><img src="/images/logo.svg" alt="" /></div>
           <div class="searchbar">
             <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-            <input type="search" placeholder="" />
+            <input class="search-input" type="search" placeholder="" />
           </div>
         </div>
         <nav>
@@ -48,7 +67,9 @@
               <i class="fa-solid fa-bell"></i><a href="">Alertes</a>
             </li>
           </ul>
-          <button class="nav-connexion-button">Connectez-vous</button>
+          <button id="btn-contact" class="nav-connexion-button">
+            Contactez-nous
+          </button>
         </nav>
       </div>
       <div class="header-bottom-section">
@@ -413,9 +434,7 @@
                   <div class="round"></div>
                   <div class="round"></div>
                   <div class="round"></div>
-                  <div class="round">
-                   
-                  </div>
+                  <div class="round"></div>
                 </div>
                 <div class="score">535</div>
               </div>
@@ -441,9 +460,7 @@
                   <div class="round"></div>
                   <div class="round"></div>
                   <div class="round"></div>
-                  <div class="round">
-                    
-                  </div>
+                  <div class="round"></div>
                 </div>
                 <div class="score">3 154</div>
               </div>
@@ -557,9 +574,7 @@
         <div class="immanquables-section">
           <div class="left-section">
             <h2>Se restaurer</h2>
-            <p>
-              Bistrots et bars typiques, et plus encore à Paris.
-            </p>
+            <p>Bistrots et bars typiques, et plus encore à Paris.</p>
             <a href="">Tout afficher</a>
           </div>
           <div class="carroussel">
@@ -569,7 +584,6 @@
                 <div class="circle">
                   <img src="/images/heart.png" alt="" />
                 </div>
-        
               </div>
               <h3>Verjus</h3>
               <div class="notation">
@@ -585,9 +599,7 @@
                 </div>
                 <div class="score">593</div>
               </div>
-              <p>
-                €€€€ • Française, Euroéenne, Moderne
-              </p>
+              <p>€€€€ • Française, Euroéenne, Moderne</p>
             </div>
             <div class="card">
               <div class="image">
@@ -596,8 +608,11 @@
                   <img src="/images/heart.png" alt="" />
                 </div>
               </div>
-            <div class="michelin">
-                <img src="/images/kisspng-restaurant-michelin-guide-michelin-star-french-cui-michelin-5b2d60914aef79.8743779315297004973069-removebg-preview.png" alt="">
+              <div class="michelin">
+                <img
+                  src="/images/kisspng-restaurant-michelin-guide-michelin-star-french-cui-michelin-5b2d60914aef79.8743779315297004973069-removebg-preview.png"
+                  alt=""
+                />
                 <h4>MICHELIN</h4>
               </div>
               <h3>114 Faubourg</h3>
@@ -614,7 +629,10 @@
                 </div>
                 <div class="score">1 826</div>
               </div>
-              <p>€€€€ • Française, Européenne, <br> Végétariens bienvenus</p>
+              <p>
+                €€€€ • Française, Européenne, <br />
+                Végétariens bienvenus
+              </p>
             </div>
             <div class="card">
               <div class="image">
@@ -624,7 +642,10 @@
                 </div>
               </div>
               <div class="michelin">
-                <img src="/images/kisspng-restaurant-michelin-guide-michelin-star-french-cui-michelin-5b2d60914aef79.8743779315297004973069-removebg-preview.png" alt="">
+                <img
+                  src="/images/kisspng-restaurant-michelin-guide-michelin-star-french-cui-michelin-5b2d60914aef79.8743779315297004973069-removebg-preview.png"
+                  alt=""
+                />
                 <h4>MICHELIN</h4>
               </div>
               <h3>Frenchie</h3>
@@ -642,7 +663,8 @@
                 <div class="score">1 329</div>
               </div>
               <p>
-                €€€€ • Française, Végétariens <br> bienvenus, Plats sans gluten
+                €€€€ • Française, Végétariens <br />
+                bienvenus, Plats sans gluten
               </p>
             </div>
             <div class="card">
@@ -731,7 +753,7 @@
                   <div class="round"></div>
                   <div class="round"></div>
                   <div class="round"></div>
-                  <div class="round"></div>         
+                  <div class="round"></div>
                   <div class="semi-round">
                     <div class="half-circle-part2"></div>
                     <div class="half-circle-part1"></div>
@@ -749,12 +771,13 @@
       </section>
     </main>
 
-
     <footer>
       <div class="logo">
-        <img src="/images/téléchargement-removebg-preview.png" alt="">
+        <img src="/images/téléchargement-removebg-preview.png" alt="" />
       </div>
       <h2>Made at le Reacteur by Julie DEE - 2022</h2>
     </footer>
+
+    <script src="/index.js"></script>
   </body>
 </html>
