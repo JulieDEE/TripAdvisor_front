@@ -589,7 +589,6 @@ footer{
 .nav-menu {
   display: flex;
   flex: none;
-  height: 46px;
   border: 1px solid black;
   border-radius: 10px;
   justify-content: space-between;
@@ -705,7 +704,6 @@ input {
 .nav-menu {
   display: flex;
   flex: none;
-  height: 88px;
   border: 1px solid black;
   border-radius: 10px;
   justify-content: space-between;
@@ -719,8 +717,23 @@ input {
   display: inherit;
 }
 
+/* ARTICLE  */
 
+.city-description p {
+  width: auto;
+  padding-right : 20px
+}
 
+.city-map h2 {
+  font-size: 20px;
+  line-height: 15px;
+}
 
+.city-map p {
+  font-size: 13px;
+  line-height: 13px;
+}
 
 }
+
+@media (max-width : 768px){}
