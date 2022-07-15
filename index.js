@@ -27,12 +27,15 @@ contactButton.addEventListener("click", () => {
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
-  const response = await axios.post("http://localhost:3000/contact", {
-    firstname: document.querySelector("#firstname").value,
-    lastname: document.querySelector("#lastname").value,
-    email: document.querySelector("#email").value,
-    message: document.querySelector("#message").value,
-  });
+  const response = await axios.post(
+    "https://tripadvisor-back-form.herokuapp.com/contact",
+    {
+      firstname: document.querySelector("#firstname").value,
+      lastname: document.querySelector("#lastname").value,
+      email: document.querySelector("#email").value,
+      message: document.querySelector("#message").value,
+    }
+  );
   console.log(response.data);
 });
 
