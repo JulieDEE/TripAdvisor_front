@@ -24,17 +24,32 @@
       src="https://kit.fontawesome.com/20275c184a.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="/reset.css" />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
     <div class="modal"></div>
     <div class="form-container">
       <form class="contact-form" id="contact-form">
         <h1>Contactez nous</h1>
-        <input id = "firstname" class="form-input" type="text" placeholder="Nom" />
-        <input id = "lastname" class="form-input" type="text" placeholder="Prénom" />
-        <input id = "email" class="form-input" type="email" placeholder="Adresse mail" />
+        <input
+          id="firstname"
+          class="form-input"
+          type="text"
+          placeholder="Nom"
+        />
+        <input
+          id="lastname"
+          class="form-input"
+          type="text"
+          placeholder="Prénom"
+        />
+        <input
+          id="email"
+          class="form-input"
+          type="email"
+          placeholder="Adresse mail"
+        />
         <textarea
           name=""
           id="message"
@@ -48,12 +63,11 @@
 
     <header class="wrapper">
       <div class="header-top-section">
-        <div class="logoSearch">
-          <div class="logo"><img src="/images/logo.svg" alt="" /></div>
-          <div class="searchbar">
-            <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-            <input class="search-input" type="search" placeholder="" />
-          </div>
+        <div class="menuLittleScreen"><i class="fa-solid fa-bars"></i></div>
+        <div class="logo"><img src="/images/logo.svg" alt="" /></div>
+        <div class="searchbar">
+          <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+          <input class="search-input" type="search" placeholder="" />
         </div>
         <nav>
           <ul class="nav-ul">
@@ -71,6 +85,8 @@
             Contactez-nous
           </button>
         </nav>
+
+        <i id="littleScreenSearch" class="fa-solid fa-magnifying-glass"></i>
       </div>
       <div class="header-bottom-section">
         <h1 class="main-title">
@@ -113,6 +129,42 @@
             </li>
           </ul>
         </nav>
+        <div class="hidden-nav-items">
+          <ul class="hidden-nav-menu-ul">
+            <li class="hidden-nav-menu">
+              <p>Hôtels</p>
+              <i class="fa-solid fa-bed"></i>
+            </li>
+            <li class="hidden-nav-menu">
+              <p>Location de vacances</p>
+              <i class="fa-solid fa-house-chimney-user"></i>
+            </li>
+            <li class="hidden-nav-menu">
+              <p>Activités</p>
+              <i class="fa-solid fa-ticket"></i>
+            </li>
+            <li class="hidden-nav-menu">
+              <p>Restaurant</p>
+              <i class="fa-solid fa-utensils"></i>
+            </li>
+            <li class="hidden-nav-menu">
+              <p>Formus de voyage</p>
+              <i class="fa-solid fa-message"></i>
+            </li>
+            <li class="hidden-nav-menu hidden">
+              <p>Vols</p>
+              <i class="fa-solid fa-message"></i>
+            </li>
+            <li class="hidden-nav-menu hidden">
+              <p>Croisières</p>
+              <i class="fa-solid fa-message"></i>
+            </li>
+            <li class="hidden-nav-menu">
+              <p>Plus</p>
+              <p class="points">...</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 

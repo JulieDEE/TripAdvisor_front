@@ -3,6 +3,8 @@ const contactButton = document.querySelector("#btn-contact");
 const formButton = document.querySelector("#form-btn");
 const formContainer = document.querySelector(".form-container");
 const form = document.querySelector("#contact-form");
+const searchbar = document.querySelector(".searchbar");
+const searchbarInput = document.queryCommandIndeterm(".search-input");
 
 const preventScroll = (e) => {
   e.preventDefault();
@@ -22,6 +24,8 @@ const enable = () => {
 contactButton.addEventListener("click", () => {
   modal.classList.add("shows");
   formContainer.classList.add("shows");
+  searchbar.classList.add("searchhidden");
+  searchbarInput.classList.add("searchhidden");
   disable();
 });
 
@@ -42,6 +46,8 @@ form.addEventListener("submit", async (e) => {
 formButton.addEventListener("click", () => {
   modal.classList.remove("shows");
   formContainer.classList.remove("shows");
+  searchbar.classList.remove("searchhidden");
+  searchbarInput.classList.remove("searchhidden");
   enable();
 });
 

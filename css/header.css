@@ -1,0 +1,168 @@
+
+/* HEADER TOP  */
+
+.header-top-section {
+  display: flex;
+  /* justify-content: space-between; */
+  margin-top: 30px;
+}
+
+.logoSearch {
+  display: flex;
+}
+
+.menuLittleScreen{
+  display: none;
+}
+
+.logo img {
+  height: 42px;
+  margin-right: 33px;
+}
+
+.logoLittleScreen{
+  display: none;
+  height: 42px;
+  margin-right: 33px;
+}
+
+.searchbar {
+  height: 38px;
+  width: 335px;
+  border-radius: 50px;
+  border: 1px solid #e0e0e0;
+  position: relative;
+  /* flex: 1; */
+  margin-right: 120px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.icon {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.search-input {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  height: 36px;
+  width: 80%;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.nav-ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+}
+
+.li-nav {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 7px;
+}
+
+.li-nav a {
+  margin-left: 5px;
+}
+
+.nav-connexion-button {
+  background-color: #000000;
+  color: #e0e0e0;
+  border-radius: 50px;
+  height: 40px;
+  width: 150px;
+  font-size: 16px;
+  font-family: "Trip Sans";
+  border: none;
+  cursor: pointer;
+}
+
+.li-nav:hover {
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 50px;
+}
+
+#littleScreenSearch{
+  display: none;
+}
+
+/* HEADER BOTTOM  */
+
+.header-bottom-section {
+  margin-top: 52px;
+  margin-bottom: 24px;
+}
+
+.main-title {
+  font-size: 54px;
+  font-weight: 900;
+  margin-bottom: 25px;
+}
+
+.first-word {
+  color: #ff5d5d;
+}
+
+.nav-menu-ul {
+  display: flex;
+  flex: 1;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.nav-menu {
+  display: flex;
+  flex: 1;
+  border: 1px solid black;
+  border-radius: 10px;
+  justify-content: space-between;
+  padding: 16px;
+  max-height: 70px;
+  cursor: pointer;
+}
+
+.hidden-nav-items {
+  display: none;
+}
+
+.hiddent-nav-menu{
+  display: none;
+}
+
+.hiddent-nav-ul{
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.nav-menu:hover {
+  background-color: #000000;
+  color: #fff;
+  font-weight: normal;
+}
+
+.nav-menu .points {
+  font-size: 30px;
+}
+
